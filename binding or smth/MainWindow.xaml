@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:binding_or_smth"
         mc:Ignorable="d"
-        Title="Bitch McFuck" Height="350" Width="578.334">
+        Title="Bitch McFuck" Height="360" Width="588.334">
     <Grid>
         <GroupBox Header="New movie" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="253">
             <Grid HorizontalAlignment="Left" Height="289" VerticalAlignment="Top" Width="243" Margin="0,0,-2,-12">
@@ -13,21 +13,21 @@
                 <Label Content="Released:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,43,0,0"/>
                 <Label Content="Director:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,76,0,0"/>
                 <Label Content="Color:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0"/>
-                <Label Content="Ratio:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,142,0,0"/>
+                <Label Content="Format:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,142,0,0"/>
                 <Label Content="Genre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,212,0,0"/>
                 <TextBox x:Name="tbxTitle" HorizontalAlignment="Left" Height="23" Margin="73,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
                 <DatePicker x:Name="dpReleased" HorizontalAlignment="Left" Margin="73,45,0,0" VerticalAlignment="Top" Width="160" FirstDayOfWeek="Monday" SelectedDateFormat="Short"/>
                 <TextBox x:Name="tbxDirector" HorizontalAlignment="Left" Height="23" Margin="73,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
                 <CheckBox x:Name="chkIsColor" Content="" HorizontalAlignment="Left" Margin="73,116,0,0" VerticalAlignment="Top"/>
-                <RadioButton x:Name="radioOne" Content="16:9" HorizontalAlignment="Left" Margin="73,149,0,0" VerticalAlignment="Top" GroupName="ratio"/>
-                <RadioButton x:Name="radioTwo" Content="3:4" HorizontalAlignment="Left" Margin="73,171,0,0" VerticalAlignment="Top" GroupName="ratio"/>
-                <RadioButton x:Name="radio3" Content="22:9" HorizontalAlignment="Left" Margin="73,193,0,0" VerticalAlignment="Top" GroupName="ratio"/>
+                <RadioButton x:Name="radioOne" Content="16:9" HorizontalAlignment="Left" Margin="73,149,0,0" VerticalAlignment="Top" GroupName="format"/>
+                <RadioButton x:Name="radioTwo" Content="3:4" HorizontalAlignment="Left" Margin="73,171,0,0" VerticalAlignment="Top" GroupName="format"/>
+                <RadioButton x:Name="radio3" Content="22:9" HorizontalAlignment="Left" Margin="73,193,0,0" VerticalAlignment="Top" GroupName="format"/>
                 <ComboBox x:Name="cbGenre" HorizontalAlignment="Left" Margin="73,216,0,0" VerticalAlignment="Top" Width="160"/>
             </Grid>
         </GroupBox>
         <GroupBox Header="All movies" HorizontalAlignment="Left" Height="299" Margin="268,10,0,0" VerticalAlignment="Top" Width="292">
             <Grid HorizontalAlignment="Left" Height="289" VerticalAlignment="Top" Width="282" Margin="0,0,-2,-12">
-                <DataGrid HorizontalAlignment="Left" Height="205" Margin="-1,72,0,0" VerticalAlignment="Top" Width="282">
+                <DataGrid x:Name="dgMovies" HorizontalAlignment="Left" Height="205" Margin="1,72,0,0" VerticalAlignment="Top" Width="280">
 
                 </DataGrid>
                 <Label Content="Searth by title:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>

@@ -8,6 +8,14 @@ namespace binding_or_smth
 {
     enum Genre
     {
-
+        Action,
+        Adventure,
+        Comedy,
+        Crime,
+        Drama,
+        Horror,
+        Musical,
+        SciFi,
+        War
     }
 }

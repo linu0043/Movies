@@ -8,23 +8,23 @@ namespace binding_or_smth
 {
     class Movie
     {
-        private int id;
+        private int id = 0;
         private string title;
         private DateTime releaseDate;
         private string director;
         private bool isColor;
-        private string ratio;
+        private string format;
         private string genre;
 
-        public Movie(int id, string title, DateTime releaseDate, string director, bool isColor, string ratio, string genre)
+        public Movie(string title, DateTime releaseDate, string director, bool isColor, string ratio, string genre)
         {
             Genre = genre;
-            Ratio = ratio;
+            Format = ratio;
             IsColor = isColor;
             Director = director;
             ReleaseDate = releaseDate;
             Title = title;
-            ID = id;
+            this.id = id++;
         }
 
         public string Genre
@@ -33,10 +33,10 @@ namespace binding_or_smth
             set { genre = value; }
         }
 
-        public string Ratio
+        public string Format
         {
-            get { return ratio; }
-            set { ratio = value; }
+            set { format = value; }
+            get { return format; }
         }
 
         public bool IsColor
@@ -62,12 +62,9 @@ namespace binding_or_smth
             get { return title; }
             set { title = value; }
         }
-
-
         public int ID
         {
             get { return id; }
-            set { id = value; }
         }
 
     }
